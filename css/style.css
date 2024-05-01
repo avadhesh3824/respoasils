@@ -1,0 +1,47 @@
+.no-margin{
+  margin: 0px;
+}
+.no-padding{
+  padding: 0px;
+}
+
+
+@font-face {
+  font-family: 'Candara, sans-serif';
+  }
+
+ @font-face {
+    font-family: 'TrajanProRegular,serif';
+    
+    } 
+
+
+
+.my-primary{
+ background: #108dc7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ef8e38, #108dc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+.nav-item{
+    font-family: 'Trajan Pro Regular';
+    font-size:20px;
+}
+
+.c1{
+    style="font-family: 'Trajan Pro Regular';font-size: 20px;"
+}
+
+.c2{
+    style="font-family: 'candara';font-size: 18px;"
+}
+
+/* Styles required only for the example above */
+.scrollspy-example-collapsible {
+  position: relative;
+  height: 200px;
+  overflow: auto;
+}
+
+
+

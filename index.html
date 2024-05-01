@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASILS13</title>
+    <link rel="icon" href="img/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="css/mdb.min.css">  -->
+
+    <style>
+        p.justify {
+            text-align: justify;
+        }
+
+        hr {
+            width: 50px;
+            opacity: 1;
+            color: #CC6F3C;
+        }
+
+        .myColor {
+            color: #CC6F3C;
+        }
+
+        .carousel-inner {
+            padding-top: 20px;
+        }
+
+        .navbar {
+            font-size: 18px;
+            font-family: 'Trajan Pro Regular';
+            font-style: normal;
+            font-weight: normal;
+        }
+
+
+        table td {
+
+            /*
+            font-size: 20px;
+            font-weight: 300;
+            font-family: 'Trajan Pro Regular';
+            font-style: normal;
+            font-weight: normal;
+*/
+
+            font-family: 'candara';
+            font-size: 20px;
+        }
+
+        .btn.btn-md {
+            font-size: 15px;
+        }
+
+        /*     Go to top start */
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        #topBtn:hover {
+            background-color: #0056b3;
+        }
+        
+       
+        
+.container{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}    
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .navbar-brand{
+        font-size:15px !important;
+    }
+    .nav-link{
+        font-size: 15px !important;
+    }
+    .display-5{
+        font-size:12px !important;
+    }
+    .bg-dark {
+    font-size: 6px;
+    color: greenyellow !important;
+    
+}
+.p-3 {
+    padding: 0.5rem!important;
+}
+.msize {
+    font-size:12px !important;
+}
+.Heading{
+font-size:22px !important;
+}
+.subcon{
+    font-size:16px !important;
+    text-align: justify !important;
+
+}
+.btn.btn-md {
+    font-size: 5px !important;
+}
+.table td {
+    font-size: 15px !important;
+}
+.accor{
+    font-size:14px !important;
+}
+
+}
+    
+
+            /*      End code  */
+
+    </style>
+
+</head>
+
+<body>
+    <a href="javascript:void(0);" id="backToTop" class="back-to-top">
+        <i class="arrow"></i><i class="arrow"></i>
+    </a>
+
+
+    <div class="page-header no-padding no-margin">
+        <div class="container">
+
+          
+            <img src="img/ASILS.gif" class="img-thumbnail ">
+        </div>
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark my-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-family: 'Trajan Pro Regular';font-size: 25px;">ASILS13</a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#keydate">Key Dates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#announcement">Announcement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Speakers">Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#committee">Committee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Venue">Venue</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main Slider-->
+    <div class="container">
+        <div id="carouselHeaderSlider" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="6" aria-label="Slide 7"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slider/slider1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+<h1 class="display-5 wow animate__zoomIn">Welcome to ASILS13</h1>
+                        <h5 class="bg-dark text-white opacity-75 p-3">"Asian Symposium Intense Laser (ASILS-13): Unraveling the Frontiers of Laser-Driven Phenomena"
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/slider2.png" class="d-block w-100" alt="..." >
+                    <div class="carousel-caption d-md-block">
+
+<h5 class="bg-dark text-white opacity-75 p-3">
+</h5>
+</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/slider3.png" class="d-block w-100" alt="...">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="img/slider/slider4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/slider5.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/slider6.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/slider7.png" class="d-block w-100" alt="...">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container p-4 ">
+        <div class="row">
+            <div class="col-md-12">
+                <marquee class ="msize" onmouseover="stop()" onmouseout="start()" width="100%" behavior="scroll" bgcolor="pink" style="font-size: 20px;font-family:candara"> <i class="fa fa-university" aria-hidden="true"></i> Laser Plasma Research Facilities in India: 
+<a href="https://www.tifr.res.in/" target="_blank">TIFR Mumbai</a> | 
+<a href="https://www.iith.ac.in/" target="_blank">IIT Hyderabad</a> | 
+<a href="https://www.tifrh.res.in/" target="_blank">TIFR Hyderabad</a>. </marquee>        
+</marquee>
+                <h3 class="my-4 text-center Heading" style="font-family: 'Trajan', serif;font-size:28px;
+">Objectives of <span class="myColor">ASILS13
+                </h3>
+                <p class="text-center subcon" style="font-family: 'candara';font-size: 20px;"> The aim of this symposium is to introduce undergraduate/graduate students to the exciting field of ultra-short,ultra-intense Laser-Matter interaction.
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-md btn-primary">ASILS13 Flyer
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid p-4" style="background-color: #f7f7f7 !important;">
+        <div class="container my-4">
+            <h3 class="my-4 text-center Heading" style="font-family: 'Trajan', serif;font-size:28px;
+"  data-aos="flip-up"
+>Topics of the <span class="myColor">Symposium</h3>
+
+
+
+            <div class="col-md-12" style="font-family: 'candara';font-size: 20px;">
+                <ul class="subcon">
+                    <li>High to Ultra-high Laser Intensity Science</li>
+                    <li>Attosecond Science and High Harmonic Generation</li>
+                    <li>Laser-Driven Particle Acceleration</li>
+                    <li>Ultrafast Plasma Dynamics</li>
+                    <li>Computational Plasma Physics</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Key dates -->
+    <section id="keydate" class="keydate"></section>
+    <div class="container-fluid p-5" data-aos="zoom-in" >
+        <h3 class="my-4 text-center Heading" style="font-family: 'Trajan', serif;font-size:28px;
+">Important <span class="myColor">Keydates</span></h3>
+        <div class="container p-4">
+            <table class="table table-bordered text-center ">
+                <tr>
+                    <td>Registration starts on: </td>
+                    <td>To be uploaded soon</td>
+                </tr>
+                <tr>
+                    <td>Scheduled date for symposium:</td>
+                    <td> To be uploaded soon</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Important Announcement  -->
+    <section id="announcement" class="announcement" style="background-color: #f7f7f7 !important;">
+        <div class="container p-5">
+            <h3 class="my-4 text-center Heading" style="font-family: 'Trajan', serif;font-size:28px;
+"data-aos="flip-left" >Important<span class="myColor" > Announcement <i class="fa fa-bullhorn" aria-hidden="true"></i></span></h3>
+            <table class="table table-bordered text-center">
+
+                <tr>
+                    <td>Registration Fee Details </td>
+                    <td> * Indian Participant Fee: ₹ 4,500 <br>
+                        * Foreign Participant Fee: $ ABC
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Abstract File</td>
+                    <td><button type="button" class="btn btn-primary btn-md">Download</button></td>
+                </tr>
+                <tr>
+                    <td>Abstract Registration Link </td>
+                    <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSfsOBN27-HENKd6gj0N4QWH1_ghw0Qox9PInLlaJs0ElunI2A/viewform" target="_blank"><button type="button" class="btn btn-primary     btn-md">Registration</button></a></td>
+                </tr>
+                <tr>
+                    <td>Accommodation Request Link </td>
+                    <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSdRYB6t8BE0Zx7gm6FgozcNKzevmEVhy6Np2YASjsz2sGpQlA/viewform" target="_blank"><button type="button" class="btn btn-primary     btn-md">Registration</button></a></td>
+                </tr>
+                <tr>
+                    <td>Programme Details</td>
+                    <td><button type="button" class="btn btn-primary btn-md">Download</button></td>
+                </tr>
+                <tr>
+                    <td>List of Lecturers</td>
+                    <td><button type="button" class="btn btn-primary btn-md">Download</button></td>
+                </tr>
+                <tr>
+                    <td>Selected Applicant List </td>
+                    <td><button type="button" class="btn btn-primary btn-md">Download</button></td>
+                </tr>
+
+                <tr>
+                    <td>Registration Status Link</td>
+                    <td><a href="https://docs.google.com/spreadsheets/d/1F4MTXCD841Wvg-5hEP0Fmk2Fnx4zapKLFLED8-ATXEw/edit?usp=sharing" target="_blank"><button type="button" class="btn btn-danger     btn-md">Status</button></a>
+                    </td>
+                </tr>
+                <td>Accommodation Status Link</td>
+                <td><a href="https://docs.google.com/spreadsheets/d/19-o9zPev7IWzPxGgZrxegGxnwUU7qLCsPPx4_hn3WAE/edit?usp=sharing" target="_blank"><button type="button" class="btn btn-danger     btn-md">Status</button></a></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <!--Invited Speaker-->
+
+
+
+    <section id="Speakers" class="Speakers">
+        <div class="container-fluid p-4">
+            <div class="container my-4">
+                <div class="row">
+                    <div class="col-md-12 text-center p-5 Heading" style="font-family: 'Trajan', serif;font-size:28px;
+">
+                        <h3>Invited <span class="myColor"> Speakers</span> </h3>
+
+                    </div>
+                </div>
+
+                <p class="text-center subcon" style="font-family: 'candara';font-size: 20px;">To be uploaded soon.</p>
+
+            </div>
+    </section>
+    <!-- organizers details code -->
+    <section id="committee" class="committee">
+        <div class="container-fluid p-5" style="background-color: #f7f7f7 !important;">
+            <h3 class="my-4 text-center Heading" style="font-family: 'Trajan', serif;font-size:28px;
+">Committee</h3>
+
+            <p class="text-center subcon" style="font-family: 'candara';font-size: 20px;">To be uploaded soon.</p>
+
+    </section>
+
+    <!--Accommodation section  -->
+    <section id="Venue" class="about"></section>
+    <div class="container p-5">
+        <h3 class="my-4 text-center Heading" style="font-family: 'Trajan', serif;font-size:28px;
+"> Venue <span class="myColor">Place</h3>
+
+
+        <div class="container p-4 subcon" style="font-family: 'candara';font-size: 20px;">
+
+
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <b class="accor">Useful Information on Labhgarh Palace, India</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="test" style="font-family: 'candara';font-size: 18px;">
+                            <li>Labhgarh Palace and Udaipur Airport are two prominent locations in western India. Situated in the western region of the country, Labhgarh Palace and Udaipur Airport are significant hubs. The distance between Labhgarh Palace and Udaipur Airport is approximately 25 kilometers by road. However, the travel time by car can vary, typically taking around 1 hour to cover this distance</li>
+                            <li>The accommodation for all plenary/invited speakers and other delegates will be provided
+                                at Labh Garh Palace.</lil>
+                        </ul>
+                      
+                    </div>
+                </div>
+                </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <b>Information before you travel to India</b>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>To be uploaded soon. </strong>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <b>During your stay in India</b>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="font-family: 'candara';font-size: 20px;">
+                        What to see in Udaipur <br><br>
+                        <ol>
+
+
+                            <li> <a href="https://www.tourism.rajasthan.gov.in/udaipur.html" target="_blank" >
+                                    Tourist Places to visit in Udaipur</a></li>
+                            <li> <a href="https://www.fabhotels.com/blog/places-to-visit-in-udaipur/" target="_blank">Top 15 Places to Visit in Udaipur</a></li>
+                            <li> <a href="https://www.viator.com/en-IN/Udaipur/d5106" target="_blank">Places to visit in Udaipur</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!--Sponsors-->
+    <div class="container-fluid p-5" style="background-color: #f7f7f7 !important;">
+        <h3 class="text-center Heading" style="font-family: 'Trajan', serif;font-size:28px;
+">Our <span class="myColor">Collaborator & Sponsors</span></h3>
+        <div id="carouselPlacement" class="carousel slide" data-bs-interval="1500" data-bs-ride="carousel">
+            <div class="container carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3  ">
+                            <img src="img/placement/IITJ_final.png" />
+                        </div>
+                        <div class="col-md-3 ">
+                            <img src="img/placement/IITH1.jpg" />
+                        </div>
+                        <!-- <div class="col-md-3 ">
+                            <img src="img/placement/r3.jpg" />
+                        </div>
+                        <div class="col-md-3 ">
+                            <img src="img/placement/r2.jpg" />
+                        </div> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3 ">
+                            <img src="img/placement/IITJ_final.png" />
+                        </div>
+                        <div class="col-md-3 ">
+                            <img src="img/placement/IITH1.jpg" />
+                        </div>
+                        <!-- <div class="col-md-3 ">
+                            <img src="img/placement/r3.jpg" />
+                        </div>
+                        <div class="col-md-3 ">
+                            <img src="img/placement/r2.jpg" />
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+
+    <section id="contact" class="contact">
+        <div class="container-fluid p-5 subcon" style="background-image: linear-gradient(to top, #acc6ee, #91d6f1, #8ce3e2, #aaebc7, #daedaf);">
+            <div class="container my-4 text-dark">
+                <div class="row">
+                    <div class="col-md-4 ">
+                       
+                        <h3 class="text-left">Contact us</h3>
+                        <div class="other" style="font-family: 'candara';font-size: 20px;">
+                            <img src="img/IITJ_final_1.png" height="150px" width="150px">
+                          
+<address>
+    <strong>Dr. Vandana Sharma</strong><br>
+    (Convener)[IIT-Hyderabad]<br>
+    Labh Garh Palace Resorts
+    Cheerwa Ghats,<br> Eklingji Road, NH-8,
+    Udaipur-313001, Rajasthan India.<br>
+    <i class="fa fa-phone-square" aria-hidden="true"></i> Help desk no: +91-*********<br>
+    <i class="fa fa-envelope-o" aria-hidden="true"></i> helpXXXX@gmail.com
+</address>
+
+                         
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-8">
+                        <h3 class="text-center"> How to reach us ! <i class="fa fa-location-arrow" aria-hidden="true"></i></h3>
+                        <!-- ======= Map Section ======= -->
+                        <section class="map">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.875244986324!2d73.73150971135155!3d24.69681495169383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e3c365a313a7%3A0x5bc46179026900a4!2sLabh%20Garh%20Palace%20Resort%20%26%20Spa%20-%204%20star%20Resorts%2FHotels%20in%20Udaipur%20for%20Wedding%20%7C%20Udaipur%20-%20Nathdwara%20%7C%20Udaipur%20-%20Jaipur%20Highway!5e0!3m2!1sen!2sin!4v1711602494494!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                        </section>
+                        <!-- End Map Section -->
+
+
+
+    </section>
+
+
+
+    <div class="container-fluid p-2 text-light" style="background-color:  black !important;">
+        <p class="my-2" style="text-align: center;">Copyright-2024 &copy; BTSD, IPR</p>
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+    <script>
+        document.addEventListner('DOMContentLoaded', function() {
+                    new Splide('.splide).mount();
+                        new WOW().init();
+                    });
+
+    </script>
+
+
+    <script src="js/wow.min.js"></script>
+
+    <!-- "Go back to top" button with up arrow -->
+    <button onclick="goToTop()" id="topBtn" title="Go to top">&#9650;</button>
+
+    <script>
+        // Get the button
+        var mybutton = document.getElementById("topBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function goToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+    <!-- end code  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
+
+    <script type="javascript" src="js/mdb.min.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+       <script>
+              new WOW().init();
+              </script>
+<script>
+AOS.init({
+offset: 300,
+duration: 1000,
+});
+</script>
+</body>
+
+</html>
