@@ -109,7 +109,7 @@
         font-size:12.5px !important;
     }
     .bg-dark {
-    font-size: 7.5px;
+    font-size: 8px;
     color: white !important;
     
 }
@@ -117,7 +117,7 @@
     padding: 0.5rem!important;
 }
 .msize {
-    font-size:12px !important;
+    font: size 12.5px !important;
 }
 .Heading{
 font-size:22px !important;
@@ -136,10 +136,12 @@ font-size:22px !important;
 .accor{
     font-size:14px !important;
 }
-
+.navbar-toggler-icon{
+    height: 1.5rem;
+    width: 1.5rem;    
+   }
 }
     
-
             /*      End code  */
 
     </style>
@@ -288,9 +290,6 @@ font-size:22px !important;
             <h3 class="my-4 text-center Heading" style="font-family: 'Trajan', serif;font-size:28px;
 "  data-aos="flip-up"
 >Topics of the <span class="myColor">Symposium</h3>
-
-
-
             <div class="col-md-12" style="font-family: 'candara';font-size: 20px;">
                 <ul class="subcon">
                     <li>High to Ultra-high Laser Intensity Science</li>
@@ -307,7 +306,7 @@ font-size:22px !important;
 
     <!-- Key dates -->
     <section id="keydate" class="keydate"></section>
-    <div class="container-fluid p-5" data-aos="zoom-in" >
+    <div class="container-fluid p-5 " data-aos="zoom-in" >
         <h3 class="my-4 text-center Heading" style="font-family: 'Trajan', serif;font-size:28px;
 ">Important <span class="myColor">Keydates</span></h3>
         <div class="container p-4">
@@ -330,7 +329,7 @@ font-size:22px !important;
     <section id="announcement" class="announcement" style="background-color: #f7f7f7 !important;">
         <div class="container p-5">
             <h3 class="my-4 text-center Heading" style="font-family: 'Trajan', serif;font-size:28px;
-"data-aos="flip-left" >Important<span class="myColor" > Announcement <i class="fa fa-bullhorn" aria-hidden="true"></i></span></h3>
+            data-aos="zoom-in" >Important<span class="myColor" > Announcement <i class="fa fa-bullhorn" aria-hidden="true"></i></span></h3>
             <table class="table table-bordered text-center">
 
                 <tr>
@@ -386,8 +385,7 @@ font-size:22px !important;
         <div class="container-fluid p-4">
             <div class="container my-4">
                 <div class="row">
-                    <div class="col-md-12 text-center p-5 Heading" style="font-family: 'Trajan', serif;font-size:28px;
-">
+                    <div class="col-md-12 text-center p-5 Heading" style="font-family: 'Trajan', serif;font-size:28px;">
                         <h3>Invited <span class="myColor"> Speakers</span> </h3>
 
                     </div>
@@ -518,8 +516,6 @@ font-size:22px !important;
     </div>
 
     <!--Footer-->
-
-
     <section id="contact" class="contact">
         <div class="container-fluid p-5 " style="background-image: linear-gradient(to top, #acc6ee, #91d6f1, #8ce3e2, #aaebc7, #daedaf);">
             <div class="container my-4 text-dark">
@@ -555,9 +551,6 @@ font-size:22px !important;
 
                         </section>
                         <!-- End Map Section -->
-
-
-
     </section>
 
 
@@ -569,6 +562,8 @@ font-size:22px !important;
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
+
+
 
     <script>
         document.addEventListner('DOMContentLoaded', function() {
@@ -625,6 +620,7 @@ offset: 300,
 duration: 1000,
 });
 </script>
+
 </body>
 
 </html>
